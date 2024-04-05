@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply inline-block border-2 border-accent text-accent p-2 rounded-md transition-colors;
+}
+
+.button:not(:disabled) {
+  @apply hover:bg-accent hover:text-dark
+}
+
+.button:disabled {
+  @apply border-gray-500 text-gray-500;
+}
